@@ -1,6 +1,7 @@
-Price,Ticker,PredictedSignal
-Ticker,,
-Date,,
+Date,Ticker,PredictedSignal
+,,
+2015-10-16,AAPL,1
+2015-10-16,GOOGL,0
 2015-10-16,MSFT,0
 2015-10-16,NVDA,0
 2015-10-16,TSLA,0
