@@ -244,40 +244,41 @@ combined_df.index.name = 'Date'
 
 combined_df['FinalSignal'] = np.where(combined_df['PredictedProb'] > MIN_PROBABILITY, combined_df['PredictedSignal'], 0)
 
-# Pushing to Github
+# CSV
 combined_df_cleaned = combined_df.reset_index()
 combined_df_cleaned = combined_df_cleaned[['Date', 'Ticker', 'PredictedSignal', 'PredictedProb', 'Volatility']]
 combined_df_cleaned['Date'] = pd.to_datetime(combined_df_cleaned['Date']).dt.strftime('%-m/%-d/%Y')
 combined_df_cleaned = combined_df_cleaned.dropna(how='all')
 combined_df_cleaned.to_csv("stock_signals.csv", index=False)
 
-TOKEN = os.getenv('GH_PAT')
-REPO = "nolknies/temp"
-FILEPATH = "stock_signals.csv"
-GITHUB_FILEPATH = "stock_signals.csv"
-COMMIT_MESSAGE = "Upload latest trading signals"
-BRANCH = "main"
+# Pushing to Github
+# TOKEN = os.getenv('GH_PAT')
+# REPO = "nolknies/temp"
+# FILEPATH = "stock_signals.csv"
+# GITHUB_FILEPATH = "stock_signals.csv"
+# COMMIT_MESSAGE = "Upload latest trading signals"
+# BRANCH = "main"
 
-with open(FILEPATH, "rb") as f:
-    content = f.read()
-    content_b64 = base64.b64encode(content).decode("utf-8")
+# with open(FILEPATH, "rb") as f:
+#     content = f.read()
+#     content_b64 = base64.b64encode(content).decode("utf-8")
 
-url = f"https://api.github.com/repos/{REPO}/contents/{GITHUB_FILEPATH}"
-headers = {"Authorization": f"token {TOKEN}"}
-res = requests.get(url, headers=headers)
-sha = res.json().get("sha") if res.status_code == 200 else None
+# url = f"https://api.github.com/repos/{REPO}/contents/{GITHUB_FILEPATH}"
+# headers = {"Authorization": f"token {TOKEN}"}
+# res = requests.get(url, headers=headers)
+# sha = res.json().get("sha") if res.status_code == 200 else None
 
-payload = {
-    "message": COMMIT_MESSAGE,
-    "content": content_b64,
-    "branch": BRANCH,
-}
-if sha:
-    payload["sha"] = sha
+# payload = {
+#     "message": COMMIT_MESSAGE,
+#     "content": content_b64,
+#     "branch": BRANCH,
+# }
+# if sha:
+#     payload["sha"] = sha
 
-put_res = requests.put(url, headers=headers, json=payload)
+# put_res = requests.put(url, headers=headers, json=payload)
 
-if put_res.status_code in [200, 201]:
-    print("✅ File uploaded successfully!")
-else:
-    print("❌ Upload failed:", put_res.status_code, put_res.json())
+# if put_res.status_code in [200, 201]:
+#     print("✅ File uploaded successfully!")
+# else:
+#     print("❌ Upload failed:", put_res.status_code, put_res.json())
