@@ -31,11 +31,11 @@ jobs:
 
       - name: Commit and push updated signals
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "nolknies"
+          git config user.email "nolknies@iu.edu"
           git add .
           git commit -m "Daily signal update" || echo "No changes to commit"
-          git push https://x-access-token:${GH_TOKEN}@github.com/nolknies/temp.git HEAD:main
+          git push https://x-access-token:${GH_PAT}@github.com/nolknies/temp.git HEAD:main
 
