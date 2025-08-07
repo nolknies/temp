@@ -23,7 +23,6 @@ from sklearn.ensemble import VotingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from collections import Counter
-from google.colab import files
 import base64
 import requests
 from datetime import datetime
