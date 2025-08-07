@@ -12,7 +12,6 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import xgboost as xgb
-import os
 #!pip install ta
 #!pip install TA-Lib
 import ta
