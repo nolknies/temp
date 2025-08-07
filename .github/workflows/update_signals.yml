@@ -33,6 +33,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
+          echo "GH_PAT length:${#GH_PAT}"
           git config user.name "nolknies"
           git config user.email "nolknies@iu.edu"
           git add .
