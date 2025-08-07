@@ -23,9 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install yfinance pandas scikit-learn xgboost numpy imbalanced-learn ta
+          pip install yfinance pandas scikit-learn xgboost numpy imbalanced-learn ta os
 
       - name: Run signal generator
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           python make_predictions.py
 
