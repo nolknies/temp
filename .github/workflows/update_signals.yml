@@ -23,6 +23,8 @@ jobs:
           pip install yfinance pandas scikit-learn xgboost numpy imbalanced-learn ta
 
       - name: Run prediction and upload script
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           python make_predictions.py
 
