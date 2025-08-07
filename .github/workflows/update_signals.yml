@@ -35,10 +35,9 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          echo "GH_PAT length:${#GH_PAT}"
           git config user.name "nolknies"
           git config user.email "nolknies@iu.edu"
-          git add .
+          git add stock_signals.csv
           git commit -m "Daily signal update" || echo "No changes to commit"
           git push https://x-access-token:${GH_PAT}@github.com/nolknies/temp.git HEAD:main
 
