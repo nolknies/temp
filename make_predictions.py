@@ -253,7 +253,7 @@ combined_df_cleaned = combined_df_cleaned.dropna(how='all')
 combined_df_cleaned.to_csv("stock_signals.csv", index=False)
 
 # Pushing to Github
-TOKEN = "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"
+TOKEN = os.getenv("GH_PAT")
 REPO = "nolknies/temp"
 FILEPATH = "stock_signals.csv"
 GITHUB_FILEPATH = "stock_signals.csv"
