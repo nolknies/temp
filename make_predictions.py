@@ -12,6 +12,7 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import xgboost as xgb
+import os
 #!pip install ta
 #!pip install TA-Lib
 import ta
@@ -250,7 +251,7 @@ combined_df_cleaned['Date'] = pd.to_datetime(combined_df_cleaned['Date']).dt.str
 combined_df_cleaned = combined_df_cleaned.dropna(how='all')
 combined_df_cleaned.to_csv("stock_signals.csv", index=False)
 
-TOKEN = "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"
+TOKEN = os.getenv('GH_PAT')
 REPO = "nolknies/temp"
 FILEPATH = "stock_signals.csv"
 GITHUB_FILEPATH = "stock_signals.csv"
