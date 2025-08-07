@@ -253,44 +253,34 @@ combined_df_cleaned = combined_df_cleaned.dropna(how='all')
 combined_df_cleaned.to_csv("stock_signals.csv", index=False)
 
 # Pushing to Github
-# TOKEN = os.getenv('GH_PAT')
-# REPO = "nolknies/temp"
-# FILEPATH = "stock_signals.csv"
-# GITHUB_FILEPATH = "stock_signals.csv"
-# COMMIT_MESSAGE = "Upload latest trading signals"
-# BRANCH = "main"
+TOKEN = "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"
+REPO = "nolknies/temp"
+FILEPATH = "stock_signals.csv"
+GITHUB_FILEPATH = "stock_signals.csv"
+COMMIT_MESSAGE = "Upload latest trading signals"
+BRANCH = "main"
 
-# with open(FILEPATH, "rb") as f:
-#     content = f.read()
-#     content_b64 = base64.b64encode(content).decode("utf-8")
+with open(FILEPATH, "rb") as f:
+    content = f.read()
+    content_b64 = base64.b64encode(content).decode("utf-8")
 
-# url = f"https://api.github.com/repos/{REPO}/contents/{GITHUB_FILEPATH}"
-# headers = {"Authorization": f"token {TOKEN}"}
-# res = requests.get(url, headers=headers)
-# sha = res.json().get("sha") if res.status_code == 200 else None
+url = f"https://api.github.com/repos/{REPO}/contents/{GITHUB_FILEPATH}"
+headers = {"Authorization": f"token {TOKEN}"}
+res = requests.get(url, headers=headers)
+sha = res.json().get("sha") if res.status_code == 200 else None
 
-# payload = {
-#     "message": COMMIT_MESSAGE,
-#     "content": content_b64,
-#     "branch": BRANCH,
-# }
-# if sha:
-#     payload["sha"] = sha
+payload = {
+    "message": COMMIT_MESSAGE,
+    "content": content_b64,
+    "branch": BRANCH,
+}
+if sha:
+    payload["sha"] = sha
 
-# put_res = requests.put(url, headers=headers, json=payload)
+put_res = requests.put(url, headers=headers, json=payload)
 
-# if put_res.status_code in [200, 201]:
-#     print("✅ File uploaded successfully!")
-# else:
-#     print("❌ Upload failed:", put_res.status_code, put_res.json())
-
-subprocess.run(['git', 'config', 'user.name', 'nolknies'])
-subprocess.run(['git', 'config', 'user.email', 'nolknies@iu.edu'])
-subprocess.run(['git', 'add', 'stock_signals.csv'])
-subprocess.run(['git', 'commit', '-m', 'Daily signal update'], check=False)  
-GH_PAT = os.getenv("GH_PAT")
-if GH_PAT:
-    repo_url = f"https://x-access-token:{GH_PAT}@github.com/nolknies/temp.git"
-    subprocess.run(['git', 'push', repo_url, 'HEAD:main'])
+if put_res.status_code in [200, 201]:
+    print("✅ File uploaded successfully!")
 else:
-    print("GH_PAT not found in environment variables.")
+    print("❌ Upload failed:", put_res.status_code, put_res.json())
+
