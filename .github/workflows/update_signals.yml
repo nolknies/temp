@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install yfinance pandas scikit-learn xgboost numpy imbalanced-learn ta os
+          pip install yfinance pandas scikit-learn xgboost numpy imbalanced-learn ta
 
       - name: Run signal generator
         env:
