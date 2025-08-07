@@ -12,6 +12,8 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import xgboost as xgb
+import os 
+import subprocess
 #!pip install ta
 #!pip install TA-Lib
 import ta
@@ -281,3 +283,14 @@ combined_df_cleaned.to_csv("stock_signals.csv", index=False)
 #     print("✅ File uploaded successfully!")
 # else:
 #     print("❌ Upload failed:", put_res.status_code, put_res.json())
+
+subprocess.run(['git', 'config', 'user.name', 'nolknies'])
+subprocess.run(['git', 'config', 'user.email', 'nolknies@iu.edu'])
+subprocess.run(['git', 'add', 'stock_signals.csv'])
+subprocess.run(['git', 'commit', '-m', 'Daily signal update'], check=False)  
+GH_PAT = os.getenv("GH_PAT")
+if GH_PAT:
+    repo_url = f"https://x-access-token:{GH_PAT}@github.com/nolknies/temp.git"
+    subprocess.run(['git', 'push', repo_url, 'HEAD:main'])
+else:
+    print("GH_PAT not found in environment variables.")
