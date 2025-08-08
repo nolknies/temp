@@ -37,13 +37,16 @@ def get_latest_price(symbol):
         timeframe=TimeFrame.Day,
         limit=1
     )
-    bars = data_client.get_stock_bars(request_params)
-    bars_list = list(bars)
-    if bars_list:
-        bar = bars_list[-1]
-        print(bar)
-        return bar['close']
-    return None
+    bars_response = client.get_stock_bars(request_params)
+    data = bars_response.get('data', {})
+    symbol_bars = data.get(symbol, [])
+    
+    if symbol_bars:
+        latest_bar = symbol_bars[0]  # latest bar dict
+        return latest_bar['close']
+    else:
+        print(f"No bars data found for {symbol}")
+        return None
     
 
 def trade_on_signals():
