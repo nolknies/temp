@@ -40,7 +40,11 @@ def get_latest_price(symbol):
     bars = data_client.get_stock_bars(request_params)
     bars_list = list(bars)
     if bars_list:
-        return bars_list[-1].c  # last close price
+        print(bars_list[-1])
+        bar = bars_list[-1]
+        if hasattr(bar, 'close'):
+            return bar.close
+        return bar[4]
     return None
     
 
