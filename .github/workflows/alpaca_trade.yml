@@ -21,6 +21,10 @@ jobs:
         run: |
           pip install alpaca-py pandas requests
 
+      - name: Upgrade alpaca-py
+        run: |
+          pip install --upgrade alpaca-py
+
       - name: Run trading script
         env:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
