@@ -41,6 +41,7 @@ def get_latest_price(symbol):
     bars_list = list(bars)
     if bars_list:
         bar = bars_list[-1]
+        print(bar)
         return bar['close']
     return None
     
