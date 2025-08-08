@@ -10,6 +10,7 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
+from alpaca.data.timeframe import TimeFrame
 
 # Set your Alpaca API credentials
 API_KEY = os.getenv("ALPACA_API_KEY")
@@ -34,7 +35,7 @@ def get_latest_price(symbol):
     try:
         request_params = StockBarsRequest(
             symbol_or_symbols=symbol,
-            timeframe="1Day",
+            timeframe=TimeFrame.Day,
             limit=1
         )
         bars = data_client.get_stock_bars(request_params)
