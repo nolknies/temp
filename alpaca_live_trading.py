@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import os
+import io
 from datetime import datetime, timedelta
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
@@ -18,7 +19,7 @@ CSV_URL = "https://raw.githubusercontent.com/nolknies/temp/main/stock_signals.cs
 
 def fetch_signals():
     resp = requests.get(CSV_URL)
-    df = pd.read_csv(pd.compat.StringIO(resp.text))
+    df = pd.read_csv(io.StringIO(resp.text))
     df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%Y').dt.date
     return df
 
