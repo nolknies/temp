@@ -25,6 +25,24 @@ data_client = StockHistoricalDataClient(API_KEY, API_SECRET)
 # Your GitHub raw CSV URL for latest signals
 CSV_URL = "https://raw.githubusercontent.com/nolknies/temp/main/stock_signals.csv"
 
+
+symbol = "AAPL"
+end_dt = datetime.now()
+start_dt = end_dt - timedelta(days=7)
+request_params = StockBarsRequest(
+    symbol_or_symbols=symbol,
+    timeframe=TimeFrame.Day,
+    start=start_dt,
+    end=end_dt
+)
+bars_response = data_client.get_stock_bars(request_params)
+if symbol in bars_response and bars_response[symbol]:
+    for bar in bars_response[symbol]:
+        print(f"{bar.timestamp}: Open={bar.open}, Close={bar.close}")
+else:
+    print(f"No bars data found for {symbol}")
+
+
 def fetch_signals():
     resp = requests.get(CSV_URL)
     df = pd.read_csv(io.StringIO(resp.text))
