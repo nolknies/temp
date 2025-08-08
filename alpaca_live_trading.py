@@ -34,7 +34,7 @@ def get_latest_price(symbol):
     try:
         request_params = StockBarsRequest(
             symbol_or_symbols=symbol,
-            timeframe="1Day,
+            timeframe="1Day",
             limit=1
         )
         bars = data_client.get_stock_bars(request_params)
