@@ -32,21 +32,17 @@ def fetch_signals():
     return df
 
 def get_latest_price(symbol):
-    try:
-        request_params = StockBarsRequest(
-            symbol_or_symbols=symbol,
-            timeframe=TimeFrame.Day,
-            limit=1
-        )
-        bars = data_client.get_stock_bars(request_params)
-        if bars and symbol in bars and len(bars[symbol]) > 0:
-            return bars[symbol][0].c  # close price of latest bar
-        else:
-            print(f"No price data for {symbol}")
-            return None
-    except Exception as e:
-        print(f"Error fetching price for {symbol}: {e}")
-        return None
+    request_params = StockBarsRequest(
+        symbol_or_symbols=symbol,
+        timeframe=TimeFrame.Day,
+        limit=1
+    )
+    bars = data_client.get_stock_bars(request_params)
+    bars_list = list(bars)
+    if bars_list:
+        return bars_list[-1].c  # last close price
+    return None
+    
 
 def trade_on_signals():
     signals_df = fetch_signals()
