@@ -99,7 +99,7 @@ def compute_technical_indicators(df):
     return df
 
 def get_stock_data_enhanced(ticker):
-    df = yf.download(ticker, start="2021-01-01", end=datetime.today().strftime('%Y-%m-%d'), auto_adjust=True)
+    df = yf.download(ticker, start="2021-01-01", auto_adjust=True, progress=False)
     df = df[['Open', 'High', 'Low', 'Close', 'Volume']].copy()
 
     df = compute_technical_indicators(df)
