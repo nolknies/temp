@@ -37,7 +37,7 @@ def get_latest_price(symbol):
         timeframe=TimeFrame.Day,
         limit=1
     )
-    bars_response = client.get_stock_bars(request_params)
+    bars_response = data_client.get_stock_bars(request_params)
     data = bars_response.get('data', {})
     symbol_bars = data.get(symbol, [])
     
