@@ -38,12 +38,12 @@ def get_latest_price(symbol):
         limit=1
     )
     bars_response = data_client.get_stock_bars(request_params)
-    data = bars_response.get('data', {})
-    symbol_bars = data.get(symbol, [])
+    
+    symbol_bars = bars_response[symbol] if symbol in bars_response else []
     
     if symbol_bars:
-        latest_bar = symbol_bars[0]  # latest bar dict
-        return latest_bar['close']
+        latest_bar = symbol_bars[-1]  # latest bar dict
+        return latest_bar.close
     else:
         print(f"No bars data found for {symbol}")
         return None
