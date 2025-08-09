@@ -110,7 +110,7 @@ def get_stock_data_enhanced(ticker):
         df[f'Signal_{horizon}'] = (df[f'Return_{horizon}'] > 0).astype(int)
 
     df['Ticker'] = ticker
-    df.dropna(inplace=True)
+    #df.dropna(inplace=True)
 
     return df
 
