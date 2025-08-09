@@ -105,10 +105,9 @@ def get_stock_data_enhanced(ticker):
     df = compute_technical_indicators(df)
 
     for horizon in [1]:
-        #df[f'Future_Close_{horizon}'] = df['Close'].shift(-horizon)
-        #df[f'Return_{horizon}'] = (df[f'Future_Close_{horizon}'] - df['Close'].iloc[:,0]) / df['Close'].iloc[:,0]
-        df['return_1'] = df['Close'].pct_change().shift(-1)
-        df[f'Signal_{horizon}'] = (df[f'return_{horizon}'] > 0).astype(int)
+        df[f'Future_Close_{horizon}'] = df['Close'].shift(-horizon)
+        df[f'Return_{horizon}'] = (df[f'Future_Close_{horizon}'] - df['Close'].iloc[:,0]) / df['Close'].iloc[:,0]
+        df[f'Signal_{horizon}'] = (df[f'Return_{horizon}'] > 0).astype(int)
 
     df['Ticker'] = ticker
     df.dropna(inplace=True)
