@@ -1,2 +1,2 @@
 Date,Ticker,PredictedSignal,PredictedProb,Volatility,Action,Priority,AdjustedPositionPct,MaxLossPortfolioPct,StopLossPct,TakeProfitPct
-01/01/1970,AAPL,1,0.5637,0.0215,BUY,0.0,0.0378,0.0016,0.043,0.086
+01/01/1970,AAPL,0,0.5105,0.0215,SELL,0.0,0.0,0,0.0,0.0
