@@ -1,0 +1,4 @@
+Date,Ticker,PredictedSignal,PredictedProb,Volatility,Action,Priority,AdjustedPositionPct,MaxLossPortfolioPct,StopLossPct,TakeProfitPct
+01/01/1970,AAPL,0,0.5105,"Ticker
+    0.021508
+Name: 2025-08-08 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
