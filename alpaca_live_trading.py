@@ -22,7 +22,7 @@ def fetch_signals():
 def trade_on_signals():
     signals_df = fetch_signals()
     today = datetime.now().date()
-    yesterday = today - timedelta(days=1)
+    yesterday = today - timedelta(days=2)
 
     signals_yesterday = signals_df[signals_df['Date'] == yesterday]
 
