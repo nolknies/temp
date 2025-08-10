@@ -1,49 +1,49 @@
 Date,Ticker,PredictedSignal,PredictedProb,Volatility,Action,Priority,AdjustedPositionPct,MaxLossPortfolioPct,StopLossPct,TakeProfitPct
-01/01/1970,AAPL,0,0.4935,"Ticker
+01/01/1970,AAPL,0,0.5124,"Ticker
     0.015233
 Name: 2024-09-30 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4885,"Ticker
+01/01/1970,AAPL,0,0.4876,"Ticker
     0.017439
 Name: 2024-10-01 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4891,"Ticker
+01/01/1970,AAPL,0,0.467,"Ticker
     0.01744
 Name: 2024-10-02 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4899,"Ticker
+01/01/1970,AAPL,0,0.4832,"Ticker
     0.017511
 Name: 2024-10-03 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.5008,"Ticker
+01/01/1970,AAPL,0,0.4972,"Ticker
     0.016915
 Name: 2024-10-07 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4812,"Ticker
+01/01/1970,AAPL,0,0.4816,"Ticker
     0.016946
 Name: 2024-10-08 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.6404,"Ticker
+01/01/1970,AAPL,1,0.6372,"Ticker
     0.014358
 Name: 2024-10-09 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.001085
 Name: 2024-10-09 00:00:00, dtype: object",0.0287,0.0574
-01/01/1970,AAPL,0,0.3814,"Ticker
+01/01/1970,AAPL,0,0.3982,"Ticker
     0.014347
 Name: 2024-10-10 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.3764,"Ticker
+01/01/1970,AAPL,0,0.3986,"Ticker
     0.014919
 Name: 2024-10-14 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4304,"Ticker
+01/01/1970,AAPL,0,0.4255,"Ticker
     0.015032
 Name: 2024-10-15 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4981,"Ticker
+01/01/1970,AAPL,0,0.518,"Ticker
     0.015302
 Name: 2024-10-16 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.398,"Ticker
+01/01/1970,AAPL,0,0.4003,"Ticker
     0.015302
 Name: 2024-10-17 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.3869,"Ticker
+01/01/1970,AAPL,0,0.3725,"Ticker
     0.011586
 Name: 2024-10-21 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.5104,"Ticker
+01/01/1970,AAPL,0,0.5088,"Ticker
     0.011692
 Name: 2024-10-22 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.6065,"Ticker
+01/01/1970,AAPL,1,0.6358,"Ticker
     0.013292
 Name: 2024-10-23 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.001005
@@ -51,41 +51,41 @@ Name: 2024-10-23 00:00:00, dtype: object",0.0266,0.0532
 01/01/1970,AAPL,0,0.4108,"Ticker
     0.013271
 Name: 2024-10-24 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.492,"Ticker
+01/01/1970,AAPL,0,0.4972,"Ticker
     0.010634
 Name: 2024-10-28 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.6211,"Ticker
+01/01/1970,AAPL,1,0.6266,"Ticker
     0.009809
 Name: 2024-10-29 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000742
 Name: 2024-10-29 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,0,0.481,"Ticker
+01/01/1970,AAPL,0,0.4822,"Ticker
     0.010748
 Name: 2024-10-30 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4953,"Ticker
+01/01/1970,AAPL,0,0.5086,"Ticker
     0.011735
 Name: 2024-10-31 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4486,"Ticker
+01/01/1970,AAPL,0,0.4673,"Ticker
     0.010399
 Name: 2024-11-04 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.3697,"Ticker
+01/01/1970,AAPL,0,0.3584,"Ticker
     0.010615
 Name: 2024-11-05 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.5618,"Ticker
+01/01/1970,AAPL,1,0.5683,"Ticker
     0.010547
 Name: 2024-11-06 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000797
 Name: 2024-11-06 00:00:00, dtype: object",0.0211,0.0422
-01/01/1970,AAPL,0,0.4382,"Ticker
+01/01/1970,AAPL,0,0.4559,"Ticker
     0.011764
 Name: 2024-11-07 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4273,"Ticker
+01/01/1970,AAPL,0,0.4371,"Ticker
     0.011774
 Name: 2024-11-11 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.3682,"Ticker
+01/01/1970,AAPL,0,0.3826,"Ticker
     0.010565
 Name: 2024-11-12 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4486,"Ticker
+01/01/1970,AAPL,0,0.4532,"Ticker
     0.01068
 Name: 2024-11-13 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
 01/01/1970,AAPL,1,0.6572,"Ticker
@@ -93,40 +93,40 @@ Name: 2024-11-13 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
 Name: 2024-11-14 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.00086
 Name: 2024-11-14 00:00:00, dtype: object",0.0228,0.0455
-01/01/1970,AAPL,0,0.4771,"Ticker
+01/01/1970,AAPL,0,0.477,"Ticker
     0.012285
 Name: 2024-11-18 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.505,"Ticker
+01/01/1970,AAPL,0,0.5117,"Ticker
     0.011646
 Name: 2024-11-19 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4783,"Ticker
+01/01/1970,AAPL,0,0.4708,"Ticker
     0.010478
 Name: 2024-11-20 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4708,"Ticker
+01/01/1970,AAPL,0,0.4847,"Ticker
     0.009694
 Name: 2024-11-21 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.5776,"Ticker
+01/01/1970,AAPL,1,0.5589,"Ticker
     0.009947
 Name: 2024-11-25 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000752
 Name: 2024-11-25 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,0,0.4667,"Ticker
+01/01/1970,AAPL,0,0.4705,"Ticker
     0.009902
 Name: 2024-11-26 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.4677,"Ticker
+01/01/1970,AAPL,0,0.4576,"Ticker
     0.007699
 Name: 2024-12-02 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.635,"Ticker
+01/01/1970,AAPL,1,0.6312,"Ticker
     0.007845
 Name: 2024-12-03 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000593
 Name: 2024-12-03 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6167,"Ticker
+01/01/1970,AAPL,1,0.6188,"Ticker
     0.007915
 Name: 2024-12-04 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000598
 Name: 2024-12-04 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6845,"Ticker
+01/01/1970,AAPL,1,0.6807,"Ticker
     0.007655
 Name: 2024-12-05 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000579
@@ -136,47 +136,49 @@ Name: 2024-12-05 00:00:00, dtype: object",0.02,0.04
 Name: 2024-12-09 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000459
 Name: 2024-12-09 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.605,"Ticker
+01/01/1970,AAPL,1,0.6236,"Ticker
     0.005953
 Name: 2024-12-10 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.00045
 Name: 2024-12-10 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6539,"Ticker
+01/01/1970,AAPL,1,0.6434,"Ticker
     0.006624
 Name: 2024-12-11 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000501
 Name: 2024-12-11 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.5738,"Ticker
+01/01/1970,AAPL,1,0.5508,"Ticker
     0.006274
 Name: 2024-12-12 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000474
 Name: 2024-12-12 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,0,0.5164,"Ticker
+01/01/1970,AAPL,0,0.5122,"Ticker
     0.006314
 Name: 2024-12-16 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,0,0.5201,"Ticker
+01/01/1970,AAPL,1,0.5426,"Ticker
     0.00633
-Name: 2024-12-17 00:00:00, dtype: object",SELL,0.0,0.0,0,0.0,0.0
-01/01/1970,AAPL,1,0.5548,"Ticker
+Name: 2024-12-17 00:00:00, dtype: object",IGNORE,0.0,0.0,0,0.0,0.0
+01/01/1970,AAPL,1,0.562,"Ticker
     0.009506
 Name: 2024-12-18 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000719
 Name: 2024-12-18 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6834,"Ticker
+01/01/1970,AAPL,1,0.6814,"Ticker
     0.009381
 Name: 2024-12-19 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000709
 Name: 2024-12-19 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6857,"Ticker
+01/01/1970,AAPL,1,0.6707,"Ticker
     0.009832
 Name: 2024-12-23 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000743
 Name: 2024-12-23 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.6724,"Ticker
+01/01/1970,AAPL,1,0.6772,"Ticker
     0.009955
 Name: 2024-12-26 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
     0.000753
 Name: 2024-12-26 00:00:00, dtype: object",0.02,0.04
-01/01/1970,AAPL,1,0.5487,"Ticker
+01/01/1970,AAPL,1,0.5509,"Ticker
     0.011231
-Name: 2024-12-30 00:00:00, dtype: object",IGNORE,0.0,0.0,0,0.0,0.0
+Name: 2024-12-30 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
+    0.000849
+Name: 2024-12-30 00:00:00, dtype: object",0.0225,0.0449
