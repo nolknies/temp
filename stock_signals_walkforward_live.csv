@@ -1,2 +1,6 @@
 Date,Ticker,PredictedSignal,PredictedProb,Volatility,Action,Priority,AdjustedPositionPct,MaxLossPortfolioPct,StopLossPct,TakeProfitPct
-01/01/1970,AAPL,1,0.5284,,IGNORE,0.0,0.0,0,0.0,0.0
+01/01/1970,AAPL,1,0.5771,"Ticker
+    0.021508
+Name: 2025-08-08 00:00:00, dtype: object",BUY,0.0,0.0378,"Ticker
+    0.001626
+Name: 2025-08-08 00:00:00, dtype: object",0.043,0.086
