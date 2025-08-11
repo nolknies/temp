@@ -1,2 +1,2 @@
 Date,Ticker,PredictedSignal,PredictedProb,Volatility,Action,Priority,AdjustedPositionPct,MaxLossPortfolioPct,StopLossPct,TakeProfitPct
-08/11/2025,AAPL,1,0.5739,0.0215,BUY,0.0,0.0378,0.0016,0.043,0.086
+08/11/2025,AAPL,1,0.5561,0.0215,BUY,0.0,0.0378,0.0016,0.043,0.086
